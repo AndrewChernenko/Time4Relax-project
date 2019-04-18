@@ -1,0 +1,165 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+
+  display: flex;
+}
+#black-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  width: 100%;
+  background-size: contain;
+
+
+}
+body {
+
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  background-image: url("../pictures main/yaponiya-gora-fudziyama-nebo-6737.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  overflow: auto;
+  background-attachment: fixed;
+
+}
+#logo {
+  height: 100px;
+  width: 100%;
+  background-image: url("../logo/1_Primary_logo_on_transparent_184x73red_cr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#white-line {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin-top: 20px;
+}
+#form-div {
+  flex-grow: 1;
+  margin-top: 30px;
+  width: 40vm;
+  margin-left: 18%;
+  flex-grow: 1;
+
+}
+li {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+label {
+  width: 30%;
+  color: white;
+  display: inline-block;
+  text-align: end;
+  margin: 0;
+
+}
+input {
+  display: inline-block;
+  margin-left: 20px;
+  width: 200px;
+  border-radius: 6px;
+
+  height: 18px;
+}
+input:focus{
+  outline: none;
+
+}
+input:required:valid {
+  border: solid 3px #28921f;
+  box-shadow: 0 0 5px #5cd053;
+}
+input:required:focus:invalid{
+  border: solid 3px #d41600;
+  box-shadow: 0 0 5px red;
+
+}
+.check {
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+
+  span {
+    display: inline-block;
+    width: 100px;
+
+  }
+  input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+#button {
+
+  margin-left: 32%;
+  margin-top: 50px;
+  input {
+    background-color: red;
+    border: solid 2px white;
+    width: 200px;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    }
+  input:active{
+    box-shadow: inset 0 0 41px 5px rgba(0,0,0,0.75);
+    }
+  input:hover{
+    cursor: pointer;
+    background-color: #a2000c;
+  }
+  }
+
+#text-input {
+  height: 80px;
+  width: 300px;
+  text-align: start;
+  vertical-align: top;
+}
+.red-star {
+  color: red;
+}
+#winter,#summer{
+
+  width: 20%;
+  margin-left: 25%;
+
+  label{
+    width: 100%;
+    padding-top: 5%;
+    height: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: solid black 2px;
+  }
+  label:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+  }
+  div {
+    height: 150px;
+    width: 500px;
+  }
+}
+#summer {
+
+}
+.panel {
+  display: none;
+  label{
+    display: none;
+  }
+}

@@ -1,0 +1,99 @@
+@import "backstyle";
+
+
+#black-background{
+  height: 100%;
+}
+
+
+#choose {
+  width: 100%;
+  height: 65%;
+
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5px solid white;
+
+  box-sizing: border-box;
+
+
+}
+
+
+
+
+
+#div-choose-season {
+  width: 80%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0);
+  color: white;
+
+  box-sizing: border-box;
+
+}
+
+#sum,#win {
+
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+
+}
+#a-winter,#a-summer {
+  height: 100%;
+}
+#a-summer {
+  background-image: url("../pictures main/devushka-leto-more-otdyh-sport.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  flex-grow: 1;
+  border-right: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#a-winter {
+  background-image: url("../pictures main/kurort-otdykh-zima-sneg-liudi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  flex-grow: 1;
+  border-left: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+
+
+}
+
+#a-winter:hover {
+  transition: 1s;
+  flex-grow: 5;
+
+}
+#a-winter:not(:hover){
+  transition: 2s;
+}
+#a-summer:hover {
+  transition: 1s;
+  flex-grow: 5;
+
+}
+#a-summer:not(:hover) {
+  transition: 2s;
+}
+a:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка</title>
+    <link rel="stylesheet/less" type="text/css" href="style/formstyle.less">
+    <script src="style/less.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="black-background">
+    <div id="logo"></div>
+    <div id="white-line"></div>
+    <div id="form-div">
+
+    <ul>
+        <li>
+            <label for="name">Ваше имя<span class="red-star">*</span></label>
+            <input id="name" type="text" name="name" required>
+        </li>
+
+        <li>
+            <label for="secondname">Ваша фамилия</label>
+            <input id="secondname" type="text" name="secondname">
+        </li>
+
+        <li>
+            <label for="email">Ваш email<span class="red-star">*</span></label>
+            <input id="email" type="email" name="email" required>
+        </li>
+
+        <li>
+            <label for="number">Ваш номер телефона<span class="red-star">*</span></label>
+            <input id="number" type="tel" name="number" required>
+        </li>
+
+        <li>
+            <label for="month">Выберите предпочитаемую дату начала вашего отдыха<span class="red-star">*</span></label>
+            <input id="month" type="month" name="name" required>
+        </li>
+        <li id="li-choose">
+            <div id="winter">
+
+            <label class="accordion">Выберите виды отдыха <a>зимой</a></label>
+            <div class="panel">
+            <div class="check">
+                <label for="skiing"></label>
+            <input id="skiing" type="checkbox" name="a1"><span>Горные лыжи</span>
+                <label for="winter-climbing"></label>
+            <input id="winter-climbing" type="checkbox" name="a2"><span>Ледолазание</span>
+                <label for="snowboard"></label>
+            <input id="snowboard" type="checkbox" name="a3"><span>Сноубординг</span>
+            <br>
+                <label for="snowbikes"></label>
+            <input id="snowbikes" type="checkbox" name="a4"><span>Снегоходы</span>
+                <label for="kaitting"></label>
+            <input id="kaitting" type="checkbox" name="a5"><span>Кайтинг</span>
+                <label for="naturban"></label>
+            <input id="naturban" type="checkbox" name="a6"><span>Зимний зорбинг</span>
+             <br>
+                <label for="walkes"></label>
+                <input id="walkes" type="checkbox" name="a7"><span>Походы</span>
+                <label for="moutainbike"></label>
+                <input id="moutainbike" type="checkbox" name="a8"><span>Зимний маунтинбайк</span>
+                <label for="climbing"></label>
+                <input id="climbing" type="checkbox" name="a9"><span>Скалолазание</span>
+            </div>
+            </div>
+            </div>
+
+            <div id="summer">
+            <label class="accordion">Выберите виды отдыха <a>летом</a></label>
+            <div class="panel">
+            <div class="check">
+                <label for="rollers"></label>
+                <input id="rollers" type="checkbox" name="a1"><span>Зиплайн</span>
+                <label for="parachut"></label>
+                <input id="parachut" type="checkbox" name="a2"><span>Парашутизм</span>
+                <label for="adventure"></label>
+                <input id="adventure" type="checkbox" name="a3"><span>Путешествие</span>
+                <br>
+                <label for="diving"></label>
+                <input id="diving" type="checkbox" name="a4"><span>Дайвинг</span>
+                <label for="bicecyle"></label>
+                <input id="bicecyle" type="checkbox" name="a5"><span>Велосипедный туризм</span>
+                <label for="sum-climming"></label>
+                <input id="sum-climming" type="checkbox" name="a6"><span>Скалолазание</span>
+                <br>
+                <label for="roup-jump"></label>
+                <input id="roup-jump" type="checkbox" name="a7"><span>Роуп-джампинг</span>
+                <label for="beach"></label>
+                <input id="beach" type="checkbox" name="a8"><span>Пляжные развлечения</span>
+                <label for="delt"></label>
+                <input id="delt" type="checkbox" name="a9"><span>Дельтапланеризм</span>
+            </div>
+            </div>
+            </div>
+
+        </li>
+        <li>
+            <label for="people">Количество людей</label>
+            <input id="people" type="number" name="members">
+        </li>
+        <li>
+            <label for="text-input">Ваши предпочтения</label>
+            <input id="text-input" type="text" name="text">
+        </li>
+    </ul>
+        <div id="button">
+            <input type="submit" value="ПОДАТЬ">
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="JS/FormJS.js"></script>
+</body>
+</html>
